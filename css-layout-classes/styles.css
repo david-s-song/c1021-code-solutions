@@ -1,0 +1,29 @@
+.container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+img,
+h2,
+p {
+  width: 100%;
+}
+
+.column-one-third,
+.column-one-fourth {
+  width: 40%;
+}
+
+.column-two-thirds {
+  width: 75%;
+}
+
+.column-one-fourth {
+  width: 25%;
+}
+
+.row {
+  display: flex;
+}
