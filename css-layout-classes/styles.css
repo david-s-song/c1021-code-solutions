@@ -5,25 +5,22 @@
   justify-content: center;
 }
 
-img,
-h2,
-p {
+.row {
+  display: flex;
+}
+
+img {
   width: 100%;
 }
 
-.column-one-third,
-.column-one-fourth {
-  width: 40%;
-}
-
-.column-two-thirds {
-  width: 75%;
+.column-one-third {
+  width: 33%;
 }
 
 .column-one-fourth {
   width: 25%;
 }
 
-.row {
-  display: flex;
+.column-two-thirds {
+  width: 66%;
 }
