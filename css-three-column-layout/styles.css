@@ -1,3 +1,62 @@
 * {
-  background-color: lightskyblue;
+  background-color: #4895ef;
+}
+
+h2,
+h3,
+p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+h3 {
+  height: 0;
+}
+
+.gray {
+  color: lightgray;
+  margin: 15px;
+  font-size: small;
+  line-height: 140%;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+img {
+  background-color: white;
+  height: 50%;
+}
+
+.back {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
 }
