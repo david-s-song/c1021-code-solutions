@@ -1,0 +1,130 @@
+* {
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  letter-spacing: 0.25rem;
+  margin-bottom: 0;
+}
+
+.top-writing {
+  width: 57%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 11px;
+  line-height: 1.25rem;
+}
+
+h1,
+h4 {
+  text-transform: uppercase;
+}
+
+h4 {
+  text-align: left;
+  font-size: small;
+  margin-bottom: 1px;
+}
+
+.context {
+  color: gray;
+  text-align: start;
+  font-size: x-small;
+  line-height: 1.2rem;
+}
+
+.parent {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 45px auto 0;
+}
+
+.card {
+  display: flex;
+  width: 40%;
+  margin-bottom: 25px;
+}
+
+img {
+  width: 100%;
+}
+
+.image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%;
+  margin-right: 5px;
+}
+
+.footer {
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.learn-more {
+  width: 20%;
+  background-color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  color: #ffadad;
+  border-color: #ffadad;
+  border: solid;
+  border-radius: 3px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*
+personal notes
+
+html
+.parent encloses all .cards
+using flex to control all .card elements
+
+css
+border-sizing: border-box tells broswer to account for any border/padding
+    in values you specifcy for an element's width/height (MDN box-sizing)
+    "If you set an element's width to 100 pixels, that 100 pixels will include
+    any border or padding you added, and the content box will shrink to
+     absorb that extra width."
+
+Reminder for canva
+border-sizing: content-box allows the positioning values to be relative to
+                           content. it does not including padding, border, margin
+
+(shorthand)
+border-sizing: border width (solid/thin), border style (solid), border color (#)
+
+img
+flex item numbers default is 1. Need to put it to 0 to not be affected
+flex-grow - if given a number, it grows
+flex-shrink - if given a number, it shrinks
+flex-basis - width & height property
+shorthand flex: flex-grow, flex-shrink, flex-basis
+used to keep content inline with h4 and p
+
+Margins
+margin: top, left/right, bottom
+margin: auto --> means center
+
+.footer using same as .header
+didn't use button element, instead used anchor tag <a> for linking another pg
+
+*/
