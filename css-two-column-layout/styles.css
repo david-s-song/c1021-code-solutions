@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-.header {
+.container {
   width: 800px;
   text-align: center;
   margin-left: auto;
@@ -15,13 +15,14 @@ h1 {
   margin-bottom: 0;
 }
 
-.top-writing {
-  width: 57%;
+.top-paragraph {
+  width: 58%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: 11px;
   line-height: 1.25rem;
+  color: gray;
 }
 
 h1,
@@ -35,22 +36,25 @@ h4 {
   margin-bottom: 1px;
 }
 
-.context {
+.paragraph {
   color: gray;
   text-align: start;
   font-size: x-small;
   line-height: 1.2rem;
 }
 
-.parent {
+.row {
   display: flex;
   width: 90%;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 45px auto 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card {
+.column-one-fourth {
   display: flex;
   width: 40%;
   margin-bottom: 25px;
@@ -90,41 +94,3 @@ img {
   font-weight: bold;
   text-decoration: none;
 }
-
-/*
-personal notes
-
-html
-.parent encloses all .cards
-using flex to control all .card elements
-
-css
-border-sizing: border-box tells broswer to account for any border/padding
-    in values you specifcy for an element's width/height (MDN box-sizing)
-    "If you set an element's width to 100 pixels, that 100 pixels will include
-    any border or padding you added, and the content box will shrink to
-     absorb that extra width."
-
-Reminder for canva
-border-sizing: content-box allows the positioning values to be relative to
-                           content. it does not including padding, border, margin
-
-(shorthand)
-border-sizing: border width (solid/thin), border style (solid), border color (#)
-
-img
-flex item numbers default is 1. Need to put it to 0 to not be affected
-flex-grow - if given a number, it grows
-flex-shrink - if given a number, it shrinks
-flex-basis - width & height property
-shorthand flex: flex-grow, flex-shrink, flex-basis
-used to keep content inline with h4 and p
-
-Margins
-margin: top, left/right, bottom
-margin: auto --> means center
-
-.footer using same as .header
-didn't use button element, instead used anchor tag <a> for linking another pg
-
-*/
