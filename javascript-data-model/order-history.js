@@ -7,25 +7,35 @@ var orderHistory = [
     orderShipTo: 'JS Master',
     orderDetails: '',
     orderInvoice: '',
-    dateDelievered: '',
-    item: 'JavaScript for impatient programmers',
-    itemAuthor: 'Rauschmayer, R. Axel',
-    beforeTaxes: 31.55,
-    itemReturnedWindowClosed: 'Sep 7, 2020'
+    dateDelievered: 'August 8, 2020',
+    item: [
+      {
+        itemName: 'JavaScript for impatient programmers',
+        itemAuthor: 'Rauschmayer, R. Axel',
+        itemImage: '',
+        beforeTaxes: 31.55,
+        itemReturnedWindowClosed: 'Sep 7, 2020'
+      }
+    ]
   },
 
   {
     orderNumber: '11399842681280257',
     orderPlaced: 'July 19, 2020',
-    orderTotal: 44,
+    orderTotal: 44.53,
     orderShipTo: 'JS Master',
     orderDetails: '',
     orderInvoice: '',
     dateDelievered: 'July 20, 2020',
-    item: 'The Timeless Way of Building',
-    itemAuthor: 'Alexander, Christopher',
-    beforeTaxes: 41.33,
-    itemReturnedWindowClosed: 'Aug 19, 2020'
+    item: [
+      {
+        itemName: 'The Timeless Way of Building',
+        itemAuthor: 'Alexander, Christopher',
+        itemImage: '',
+        beforeTaxes: 41.33,
+        itemReturnedWindowClosed: 'Aug 19, 2020'
+      }
+    ]
   },
 
   {
@@ -36,10 +46,15 @@ var orderHistory = [
     orderDetails: '',
     orderInvoice: '',
     dateDelievered: 'July 7, 2020',
-    item: 'Gamecube Controller Adapter',
-    itemAuthor: '',
-    beforeTaxes: 15.98,
-    itemReturnedWindowClosed: 'Aug 19, 2020'
+    item: [
+      {
+        itemName: 'Gamecube Controller Adapter',
+        itemAuthor: '',
+        itemImage: '',
+        beforeTaxes: 15.98,
+        itemReturnedWindowClosed: 'Aug 5, 2020'
+      }
+    ]
   },
 
   {
@@ -54,14 +69,16 @@ var orderHistory = [
       {
         itemName: 'Gamecube Controller',
         itemAuthor: '',
-        beforeTaxes: 15.98,
-        itemReturnedWindowClosed: 'Aug 19, 2020'
+        itemImage: '',
+        beforeTaxes: 94.95,
+        itemReturnedWindowClosed: 'Aug 4, 2020'
       },
       {
         itemName: 'The Art of Sql',
         itemAuthor: 'Faroult, Stephanie',
+        itemImage: '',
         beforeTaxes: 33.99,
-        itemReturnedWindowClosed: 'Aug 19, 2020'
+        itemReturnedWindowClosed: 'Aug 4, 2020'
       }
     ]
   }
