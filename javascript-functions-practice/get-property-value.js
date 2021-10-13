@@ -1,4 +1,4 @@
 /* exported getPropertyValue */
-
-// lea, 'occupation'
-// software developer
+function getPropertyValue(object, key) {
+  return name.object.key;
+}
