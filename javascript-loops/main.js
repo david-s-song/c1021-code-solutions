@@ -16,6 +16,8 @@ function getNumbersToTen() {
   return numbers;
 }
 
+getNumbersToTen();
+
 function getEvenNumbersToTwenty() {
   var evenNumbers = [];
   var currentNumber = 2;
@@ -25,6 +27,8 @@ function getEvenNumbersToTwenty() {
   }
   return evenNumbers;
 }
+
+getEvenNumbersToTwenty();
 
 function repeatWord(word, times) {
   var count = 1;
@@ -36,11 +40,15 @@ function repeatWord(word, times) {
   return repeated;
 }
 
+repeatWord('michaeljordan', 10);
+
 function logEachCharacter(string) {
   for (var i = 0; i < string.length; i++) {
     console.log(string[i]);
   }
 }
+
+logEachCharacter('Kobe');
 
 function doubleAll(numbers) {
   var doubled = [];
@@ -50,6 +58,8 @@ function doubleAll(numbers) {
   return doubled;
 }
 
+doubleAll([2, 4, 7, 10]);
+
 function getKeys(object) {
   var keys = [];
   for (var key in object) {
@@ -58,10 +68,14 @@ function getKeys(object) {
   return keys;
 }
 
+getKeys({ Kobe: 'shooting-guard', Gasol: 'center', Nash: 'point-guard' });
+
 function getValues(object) {
   var values = [];
   for (var key in object) {
     values.push(object[key]);
-
   }
+  return values;
 }
+
+getValues({ Kobe: 'shooting-guard', Gasol: 'center', Nash: 'point-guard' });
