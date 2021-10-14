@@ -100,7 +100,9 @@ function introduceWarnerBro(name) {
     return "We're the warner brothers!";
   } else if (name === 'dot') {
     return "I'm cute~";
-  } else if ((name !== 'wakko') || (name !== 'yakko') || (name !== 'dot')) { return 'Goodnight everybody!'; }
+  } else {
+    return 'Goodnight everybody!';
+  }
 }
 
 var tak = {
