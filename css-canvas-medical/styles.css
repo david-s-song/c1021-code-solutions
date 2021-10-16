@@ -5,13 +5,13 @@
   margin-right: auto;
 }
 
-.row1 {
+.row {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.logo {
+.column-full {
   display: flex;
   justify-content: space-between;
 }
@@ -174,11 +174,6 @@ h2 {
 .row4 {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.column-full {
-  position: relative;
-  padding-left: 5%;
 }
 
 .navigation2 {
