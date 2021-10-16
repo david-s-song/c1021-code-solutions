@@ -39,60 +39,53 @@ h4 {
 .paragraph {
   color: gray;
   text-align: start;
-  font-size: x-small;
+  font-size: 10.5px;
   line-height: 1.2rem;
 }
 
 .row {
   display: flex;
-  width: 90%;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 30px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .column-half {
-  display: flex;
   width: 50%;
-  margin-bottom: 25px;
-  padding-right: 5%;
-  padding-left: 5%;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 7%;
+  padding-left: 7%;
+  position: relative;
 }
 
 img {
-  width: 100%;
-}
-
-.image {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 25%;
-  margin-right: 5px;
+  width: 85px;
 }
 
 .footer {
-  width: 800px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-top: 20px;
 }
 
 .learn-more {
   width: 20%;
-  background-color: white;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
   text-transform: uppercase;
-  color: #ffadad;
-  border-color: #ffadad;
+  color: indianred;
   border: solid;
   border-radius: 3px;
-  font-weight: bold;
+  font-weight: ;
   text-decoration: none;
+  border-width: 2px;
+}
+
+.column-left {
+  left: 30px;
+}
+
+.column-right {
+  right: 30px;
 }
