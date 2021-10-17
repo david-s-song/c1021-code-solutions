@@ -1,11 +1,9 @@
 /* exported getStudentNames */
-function getStudentNames(students) {
-  var studentNames = [];
-  for (var name in students) {
-    studentNames.push(students[name]);
-  }
-  return studentNames;
-}
 
-// use .map method?
-// did not pass
+function getStudentNames(students) {
+  var currentStudentName = [];
+  for (var i = 0; i < students.length; i++) {
+    currentStudentName.push(students[i].name);
+  }
+  return currentStudentName;
+}

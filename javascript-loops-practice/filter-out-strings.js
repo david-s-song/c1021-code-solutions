@@ -1,11 +1,10 @@
 /* exported filterOutStrings */
 function filterOutStrings(values) {
-  var strings = [];
+  var noStrings = [];
   for (var i = 0; i < values.length; i++) {
-    strings.filter(values[i]);
+    if (values[i] !== '') {
+      noStrings.push(values[i]);
+    }
   }
-  return strings;
-
+  return noStrings;
 }
-
-// use .filter method?

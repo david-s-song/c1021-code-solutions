@@ -1,10 +1,10 @@
 /* exported filterOutNulls */
 function filterOutNulls(values) {
-  var nulls = [];
+  var minusNulls = [];
   for (var i = 0; i < values.length; i++) {
-    values.filter(null);
+    if (values[i] !== null) {
+      minusNulls.push(values[i]);
+    }
   }
-  return nulls;
+  return minusNulls;
 }
-
-// use the .filter method?
