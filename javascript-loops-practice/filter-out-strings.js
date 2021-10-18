@@ -2,7 +2,7 @@
 function filterOutStrings(values) {
   var noStrings = [];
   for (var i = 0; i < values.length; i++) {
-    if (values[i] !== '') {
+    if (typeof values[i] !== (typeof 'string')) {
       noStrings.push(values[i]);
     }
   }
