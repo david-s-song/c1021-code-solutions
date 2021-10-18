@@ -7,8 +7,8 @@
 
 .row {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
+  position: relative;
 }
 
 .column-full {
@@ -42,7 +42,7 @@
   width: 15%;
 }
 
-.hero-image {
+.column-80 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -52,12 +52,12 @@
 }
 
 .hero {
-  width: 95%;
+  width: 90%;
 }
 
 h2 {
   position: absolute;
-  top: 21%;
+  top: 13%;
   width: 43%;
   left: 9%;
   color: white;
@@ -67,44 +67,46 @@ h2 {
 
 .paragraph-image {
   position: absolute;
-  top: 38%;
-  width: 50%;
+  top: 31%;
+  width: 52%;
   left: 9%;
   color: white;
   text-align: left;
-  line-height: 1.25rem;
+  line-height: 1.2rem;
   font-family: 'avenir', sans-serif;
   font-size: 10px;
+  font-weight: bold;
   padding-right: 75px;
-  padding-top: 2px;
+  padding-top: 10px;
 }
 
 .overlay {
-  width: 95%;
+  width: 90%;
   height: 100%;
   background: gray;
   opacity: 0.3;
   position: absolute;
 }
 
-.bordered-nav2 {
+.bordered-nav-image {
   background-color: #01497c;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 4px;
   position: absolute;
   left: 9%;
-  bottom: 10%;
+  bottom: 14%;
   text-decoration: none;
   font-family: 'avenir', sans-serif;
   font-size: small;
 }
 
-.column-40 {
+.card-40 {
   padding: 1px;
+  width: 100%;
 }
 
-.sub-heading1 {
+.sub-heading {
   text-align: center;
   font-family: 'Tiempos Headline', sans-serif;
   color: gray;
@@ -113,40 +115,44 @@ h2 {
 }
 
 .sub-paragraph {
-  line-height: 1.25rem;
+  line-height: 1.1rem;
   font-family: 'avenir', sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   text-align: center;
   color: gray;
+  margin-top: 10px;
 }
 
-.column-60 {
+.card-60 {
   display: flex;
   text-align: center;
+  padding-top: 20px;
+}
+
+.column-half {
+  width: 100%;
+  margin: auto;
+  background-color: #f8f9fa;
 }
 
 .cities {
-  width: 200%;
   color: gray;
   font-family: 'avenir', sans-serif;
   font-size: 11px;
   line-height: 25px;
   margin-bottom: 30px;
+  width: 100%;
+  font-weight: bold;
 }
 
-.body1 {
-  background-color: #f8f9fa;
-}
-
-.sub-heading2 {
-  text-align: left;
+.sub-heading-bottom {
   font-family: 'Tiempos Headline', sans-serif;
   color: gray;
   font-weight: 50;
   margin-bottom: 0;
 }
 
-.sub-paragraph2 {
+.sub-paragraph-bottom {
   line-height: 1.25rem;
   font-family: 'avenir', sans-serif;
   font-size: 10px;
@@ -155,48 +161,57 @@ h2 {
   margin-top: 10px;
 }
 
-.bordered-nav3 {
+.bordered-nav-bottom {
   background-color: #01497c;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 4px;
   text-decoration: none;
   font-family: 'avenir', sans-serif;
   font-size: small;
 }
 
-.body2 {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+.card-20 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  margin-left: 40px;
 }
 
-.row4 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.navigation2 {
+.navigation-bottom {
   position: absolute;
-  right: 20px;
-  top: 8px;
+  right: 60px;
+  padding-top: 29px;
 }
 
-.body3 {
-  background-color: #495057;
+.column-90 {
+  background-color: #505152;
+  position: relative;
   color: white;
   display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  padding-bottom: 10%;
+  justify-content: space-around;
+  padding-bottom: 8%;
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
 }
 
-.column-10 {
-  margin-top: 10%;
+.case-10,
+.case-11 {
+  margin-top: 6%;
   font-family: 'avenir', sans-serif;
   font-size: small;
   padding-left: 20px;
   margin-right: 11%;
+  color: lightgray;
+}
+
+.card-10 {
+  padding-left: 100px;
+}
+
+.card-11 {
+  margin-right: 50px;
 }
 
 .imagecanvas-bottom {
@@ -209,15 +224,25 @@ h2 {
   line-height: 1.25rem;
   font-size: 10px;
   padding-top: 35%;
+  color: lightgray;
 }
 
-.body4 {
+.column-half,
+.column-100 {
   background-color: #f8f9fa;
 }
 
-.footer {
-  height: 50px;
-  padding-top: 12px;
-  padding-left: 5%;
-  margin-top: 10px;
+.column-100 {
+  height: 75px;
+  padding-top: 23px;
+}
+
+.footer-nav-items {
+  text-decoration: none;
+  font-family: 'avenir', sans-serif;
+  color: gray;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 25px;
+  padding-left: 16px;
 }
