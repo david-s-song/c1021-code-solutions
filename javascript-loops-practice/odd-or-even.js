@@ -1,10 +1,9 @@
 /* exported oddOrEven */
 
 function oddOrEven(numbers) {
-  for (var i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      return 'even';
-    }
+  if (numbers % 2 === 0) {
+    return 'even';
+  } else {
+    return 'odd';
   }
-  return 'odd';
 }
