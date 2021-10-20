@@ -10,30 +10,27 @@
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
 h2 {
   font-size: 20px;
 }
 
-.column-full {
-  display: flex;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 16px;
-  width: 90%;
-  justify-content: center;
+.column-fourth {
+  flex-basis: 220px;
 }
 
 .images {
-  width: 75%;
+  width: 90%;
   margin: auto;
 }
 
 .card-storage {
   display: flex;
   flex-direction: column;
-  margin: -3%;
+  padding-top: 10px;
+  padding-bottom: 16px;
 }
 
 .icons {
