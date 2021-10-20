@@ -3,19 +3,22 @@
 }
 
 .container {
+  background-color: #fbf1ea;
+}
+
+.container-black {
   background-color: black;
 }
 
 .row {
   display: flex;
-  background-color: #fbf1ea;
-  width: 1000px;
-  height: 1000px;
 }
 
 .column {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  width: 1000px;
+  height: 1000px;
   position: relative;
 }
 
