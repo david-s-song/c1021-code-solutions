@@ -55,7 +55,7 @@ h4 {
 .cards {
   display: flex;
   position: relative;
-  width: 75%;
+  width: 69%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -85,10 +85,6 @@ img {
   border-width: 2px;
 }
 
-.column-left {
-  left: 30px;
-}
-
-.column-right {
-  right: 30px;
+.card-right {
+  right: 35px;
 }
