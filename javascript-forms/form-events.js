@@ -12,8 +12,6 @@ function handleInput(event) {
   console.log('input', event.target.name, event.target.value);
 }
 
-// querying the dom for "each form control"
-// that's 2 <input> elements and one <textarea> element
 var userName = document.querySelector('#user-name');
 userName.addEventListener('focus', handleFocus);
 userName.addEventListener('blur', handleBlur);

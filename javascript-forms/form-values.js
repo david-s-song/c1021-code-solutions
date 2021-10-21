@@ -1,14 +1,17 @@
-/*
-var $contactForm = document.querySelector('#contact-form');
-$contactForm.addEventListener('submit', fu);
-event.preventDefault();
-var
-name
-email
-message:
+var myContactForm = document.querySelector('#contact-form');
 
-// syntax nodeList = HTMLFormElement.elements
+function submitForm(event) {
+  event.preventDefault();
+  var name = myContactForm.elements.name.value;
+  var email = myContactForm.elements.email.value;
+  var message = myContactForm.elements.message.value;
+  var dataInfo = {
+    name: name,
+    email: email,
+    message: message
+  };
+  console.log('dataInfo:', dataInfo);
+}
 
-// get each of the value of form controls theForm.elements.email.value
-// value of each of my form controls by name via form's elements property
-*/
+myContactForm.reset();
+myContactForm.addEventListener('submit', submitForm);
