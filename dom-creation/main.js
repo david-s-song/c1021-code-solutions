@@ -59,41 +59,37 @@ var pokedex = [
 
 function renderPokemon(pokemon) {
   var $columnThird = document.createElement('div');
-  $columnThird.className = 'column-third';
+  $columnThird.setAttribute('class', 'column-third');
+
   var $pokeCard = document.createElement('div');
-  $pokeCard.className = 'pokemon-card';
+  $pokeCard.setAttribute('class', 'pokemon-card');
   $columnThird.appendChild($pokeCard);
 
   var $image = document.createElement('img');
   $pokeCard.appendChild($image);
-  $image.setAttribute('src', 'images/blastoise.png');
+  $image.setAttribute('src', pokemon.imageUrl);
 
   var $pokeText = document.createElement('div');
   $pokeCard.appendChild($pokeText);
-  $pokeText.className = 'pokemon-card-text';
+  $pokeText.setAttribute('class', $pokeCard);
 
   var $heading = document.createElement('h2');
   $pokeText.appendChild($heading);
-  $heading.setAttribute('name', 'blastoise');
+  $heading.textContent = pokemon.name;
 
   var $numbers = document.createElement('h3');
   $pokeText.appendChild($numbers);
-  $numbers.setAttribute('number', '009');
+  $numbers.textContent = '#' + pokemon.number;
 
   var $description = document.createElement('p');
   $pokeText.appendChild($description);
-  $description.textContent = 'It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.';
+  $description.textContent = pokemon.description;
 
+  return $columnThird;
 }
+var $row = document.querySelector('.row');
 
 for (var i = 0; i < pokedex.length; i++) {
-  pokedex[i] += pokedex;
+  var $pokemon = renderPokemon(pokedex[i]);
+  $row.append($pokemon);
 }
-
-var $row = document.querySelector('row');
-$row.append(renderPokemon);
-
-// Query the DOM for the "row" element.
-// Loop through your pokedex array and for each object:
-// pass the object to renderPokemon and get its return value
-// append the DOM tree returned by renderPokemon to the "row" element
