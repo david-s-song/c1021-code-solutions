@@ -57,36 +57,43 @@ var pokedex = [
   }
 ];
 
-/*
-
 function renderPokemon(pokemon) {
   var $columnThird = document.createElement('div');
   $columnThird.className = 'column-third';
   var $pokeCard = document.createElement('div');
   $pokeCard.className = 'pokemon-card';
+  $columnThird.appendChild($pokeCard);
+
   var $image = document.createElement('img');
-  $image.src = 'images/wartortle.png';
+  $pokeCard.appendChild($image);
+  $image.setAttribute('src', 'images/blastoise.png');
+
   var $pokeText = document.createElement('div');
-  $pokeText.textContent = 'pokemon-card-text';
+  $pokeCard.appendChild($pokeText);
+  $pokeText.className = 'pokemon-card-text';
+
   var $heading = document.createElement('h2');
-  $heading.textContent = 'Pikachu';
+  $pokeText.appendChild($heading);
+  $heading.setAttribute('name', 'blastoise');
+
   var $numbers = document.createElement('h3');
-  $numbers.textContent = '#025';
+  $pokeText.appendChild($numbers);
+  $numbers.setAttribute('number', '009');
+
   var $description = document.createElement('p');
-  $description.textContent = 'Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.';
+  $pokeText.appendChild($description);
+  $description.textContent = 'It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.';
+
 }
-*/
-
-/*
-
-var $row = document.querySelector('row');
-
-// loop through your pokedex?
 
 for (var i = 0; i < pokedex.length; i++) {
-  pokedex[i] = renderPokemon;
-  $row.appendChild(renderPokemon);
-
+  pokedex[i] += pokedex;
 }
-// I am missing something here
-*/
+
+var $row = document.querySelector('row');
+$row.append(renderPokemon);
+
+// Query the DOM for the "row" element.
+// Loop through your pokedex array and for each object:
+// pass the object to renderPokemon and get its return value
+// append the DOM tree returned by renderPokemon to the "row" element
