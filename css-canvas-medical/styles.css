@@ -1,6 +1,5 @@
 .container {
   width: 800px;
-  height: 1500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,39 +29,39 @@
   margin-left: 25px;
 }
 
-#bordered-nav {
+.bordered-nav {
   background-color: #01497c;
   color: white;
   padding: 8px;
   margin-left: 10px;
   border-radius: 4px;
+  text-decoration: none;
+  font-family: 'avenir', sans-serif;
+  font-size: 11px;
 }
 
 .imagecanvas-top {
   width: 15%;
 }
 
-.column-80 {
+.column-97 {
   position: relative;
   display: flex;
-  justify-content: center;
   width: 97%;
-  margin-bottom: 6%;
-  margin-top: 6%;
 }
 
 .hero {
   width: 90%;
+  margin: auto;
 }
 
-h2 {
-  position: absolute;
-  top: 13%;
+.img-heading {
   width: 43%;
   left: 9%;
   color: white;
-  text-align: left;
+  top: 45px;
   font-family: 'Tiempos Headline', sans-serif;
+  position: absolute;
 }
 
 .paragraph-image {
@@ -86,6 +85,7 @@ h2 {
   background: gray;
   opacity: 0.3;
   position: absolute;
+  left: 38px;
 }
 
 .bordered-nav-image {
@@ -131,8 +131,6 @@ h2 {
 
 .column-half {
   width: 100%;
-  margin: auto;
-  background-color: #f8f9fa;
 }
 
 .cities {
@@ -183,7 +181,7 @@ h2 {
   padding-top: 29px;
 }
 
-.column-90 {
+.bottom-box {
   background-color: #505152;
   position: relative;
   color: white;
@@ -193,6 +191,11 @@ h2 {
   width: 100%;
   margin: auto;
   padding-left: 20px;
+}
+
+.column-90 {
+  width: 100%;
+  margin: auto;
 }
 
 .case-10,
