@@ -1,0 +1,90 @@
+* {
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  letter-spacing: 0.25rem;
+  margin-bottom: 0;
+}
+
+.top-paragraph {
+  width: 58%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 11px;
+  line-height: 1.25rem;
+  color: gray;
+}
+
+h1,
+h4 {
+  text-transform: uppercase;
+}
+
+h4 {
+  text-align: left;
+  font-size: small;
+  margin-bottom: 1px;
+}
+
+.paragraph {
+  color: gray;
+  text-align: start;
+  font-size: 10.5px;
+  line-height: 1.2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-half {
+  width: 50%;
+}
+
+.cards {
+  display: flex;
+  position: relative;
+  width: 69%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 85px;
+}
+
+.footer {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.learn-more {
+  width: 20%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  color: indianred;
+  border: solid;
+  border-radius: 3px;
+  font-weight: ;
+  text-decoration: none;
+  border-width: 2px;
+}
+
+.card-right {
+  right: 35px;
+}
