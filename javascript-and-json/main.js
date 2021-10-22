@@ -24,8 +24,8 @@ console.log('typeOf books: ', typeof books);
 var jsonBooks = JSON.stringify(books);
 console.log('typeOf jsonBooks: ', typeof jsonBooks);
 
-var String = '{"id" : "12335", "Name" : "David Song"}';
-console.log('typeOf String: ', typeof String);
+var string = '{"id" : "12335", "Name" : "David Song"}';
+console.log('typeOf string: ', typeof string);
 
-var stringObj = JSON.parse(String);
+var stringObj = JSON.parse(string);
 console.log('typeOf stringObj: ', typeof stringObj);
