@@ -1,15 +1,17 @@
 
-var bulbOff = document.querySelector('.yellow-circle-button');
-var onOff = false;
+var $clicked = false;
+var $bulbOff = document.querySelector('.yellow-circle-button');
+var $container = document.querySelector('.container');
 
-function isItOn() {
-  if (onOff) {
-    bulbOff.className = 'black-circle-button';
-    onOff = false;
+function change(event) {
+  if ($clicked === true) {
+    $bulbOff.className = 'yellow-circle-button';
+    $container.className = 'container';
   } else {
-    bulbOff.className = 'yellow-circle-button';
-    onOff = true;
+    $bulbOff.className = 'black-circle-button';
+    $container.className = 'container-black';
   }
+  $clicked = !$clicked;
 }
 
-bulbOff.addEventlistener('click', isItOn);
+document.addEventListener('click', change);
