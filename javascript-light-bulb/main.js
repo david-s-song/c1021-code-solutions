@@ -14,4 +14,4 @@ function change(event) {
   $clicked = !$clicked;
 }
 
-document.addEventListener('click', change);
+$bulbOff.addEventListener('click', change);
