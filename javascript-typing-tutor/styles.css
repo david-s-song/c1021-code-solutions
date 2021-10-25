@@ -1,0 +1,47 @@
+* {
+  font-family: 'Patua One', cursive;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  width: 1000px;
+}
+
+.column {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sentence {
+  letter-spacing: 3px;
+}
+
+.each-letter {
+  border-bottom: 3px solid transparent;
+  padding-bottom: 3px;
+}
+
+.each-letter-current {
+  border-bottom-color: #000;
+}
+
+.each-letter-current.each-letter-wrong {
+  border-bottom-color: #f75353;
+}
+
+.each-letter-right {
+  padding-bottom: 3px;
+  color: #25d325;
+}
+
+.each-letter-wrong {
+  padding-bottom: 3px;
+  color: #f75353;
+}
