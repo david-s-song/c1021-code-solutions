@@ -41,11 +41,11 @@
 }
 
 img {
-  width: 110%;
+  width: 100%;
 }
 
 #special-image {
-  height: 220px;
+  height: 225px;
   object-fit: cover;
 }
 
@@ -57,5 +57,5 @@ h5 {
 
 .images-deck {
   margin: 10px;
-  width: 134px;
+  width: 150px;
 }
