@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fbf1ea;
+}
+
+.container-black {
+  background-color: black;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  height: 800px;
+  margin: auto;
+}
+
+.yellow-circle-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: yellow;
+  border: none;
+  margin: auto;
+  filter: blur(8px);
+  box-shadow: 2px 2px 2px 2px yellow;
+}
+
+.black-circle-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(30 28 28);
+  border: none;
+  margin: auto;
+  box-shadow: 2px 2px 2px 2px black;
+}
