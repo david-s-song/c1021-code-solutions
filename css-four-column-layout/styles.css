@@ -1,0 +1,53 @@
+* {
+  font-family: 'Barlow', sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  background-color: #f8f9fa;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.column-fourth {
+  flex-basis: 220px;
+}
+
+.images {
+  width: 90%;
+  margin: auto;
+}
+
+.card-storage {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
+
+.icons {
+  width: 20%;
+  margin: auto;
+}
+
+h3 {
+  font-size: 13px;
+  margin: auto;
+  margin-top: 12px;
+  padding-bottom: 16px;
+}
+
+p {
+  font-size: 10px;
+  font-weight: 500;
+  margin: auto;
+  padding-bottom: 40px;
+}
