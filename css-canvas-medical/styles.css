@@ -1,0 +1,253 @@
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+}
+
+.column-full {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-left: 121px;
+}
+
+.nav-items {
+  text-decoration: none;
+  font-family: 'avenir', sans-serif;
+  color: #a5a5a5;
+  font-size: 11px;
+  margin-left: 25px;
+}
+
+.bordered-nav {
+  background-color: #01497c;
+  color: white;
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'avenir', sans-serif;
+  font-size: 11px;
+}
+
+.imagecanvas-top {
+  width: 10%;
+  margin-left: 22px;
+}
+
+.column-97 {
+  position: relative;
+  display: flex;
+}
+
+.hero {
+  width: 95%;
+  margin: auto;
+}
+
+.img-heading {
+  width: 43%;
+  left: 9%;
+  color: white;
+  top: 45px;
+  font-family: 'Tiempos Headline', sans-serif;
+  position: absolute;
+}
+
+.paragraph-image {
+  position: absolute;
+  top: 31%;
+  width: 52%;
+  left: 9%;
+  color: white;
+  text-align: left;
+  line-height: 1.2rem;
+  font-family: 'avenir', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  padding-right: 75px;
+  padding-top: 10px;
+}
+
+.overlay {
+  width: 95%;
+  height: 100%;
+  background: gray;
+  opacity: 0.3;
+  position: absolute;
+  left: 19px;
+}
+
+.bordered-nav-image {
+  background-color: #01497c;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 4px;
+  position: absolute;
+  left: 9%;
+  bottom: 14%;
+  text-decoration: none;
+  font-family: 'avenir', sans-serif;
+  font-size: small;
+}
+
+.card-40 {
+  padding: 1px;
+  width: 100%;
+}
+
+.sub-heading {
+  text-align: center;
+  font-family: 'Tiempos Headline', sans-serif;
+  color: gray;
+  font-weight: 50;
+  margin-bottom: 0;
+}
+
+.sub-paragraph {
+  line-height: 1.1rem;
+  font-family: 'avenir', sans-serif;
+  font-size: 11px;
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+
+.card-60 {
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.column-half {
+  width: 100%;
+}
+
+.cities {
+  color: gray;
+  font-family: 'avenir', sans-serif;
+  font-size: 11px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.sub-heading-bottom {
+  font-family: 'Tiempos Headline', sans-serif;
+  color: gray;
+  font-weight: 50;
+  margin-bottom: 0;
+}
+
+.sub-paragraph-bottom {
+  line-height: 1.25rem;
+  font-family: 'avenir', sans-serif;
+  font-size: 10px;
+  text-align: left;
+  color: gray;
+  margin-top: 10px;
+}
+
+.bordered-nav-bottom {
+  background-color: #01497c;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'avenir', sans-serif;
+  font-size: small;
+}
+
+.card-20 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.navigation-bottom {
+  position: absolute;
+  right: 60px;
+  padding-top: 29px;
+}
+
+.bottom-box {
+  background-color: #505152;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8%;
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.column-90 {
+  width: 100%;
+  margin: auto;
+}
+
+.case-10,
+.case-11 {
+  margin-top: 6%;
+  font-family: 'avenir', sans-serif;
+  font-size: small;
+  padding-left: 20px;
+  margin-right: 11%;
+  color: lightgray;
+}
+
+.card-10 {
+  padding-left: 100px;
+}
+
+.card-11 {
+  margin-right: 50px;
+}
+
+.imagecanvas-bottom {
+  position: absolute;
+  width: 10%;
+  padding-top: 15px;
+}
+
+.address {
+  line-height: 1.1rem;
+  font-size: 10px;
+  padding-top: 35%;
+  color: lightgray;
+}
+
+.column-half,
+.column-100 {
+  background-color: #f8f9fa;
+}
+
+.footer-nav-items {
+  text-decoration: none;
+  font-family: 'avenir', sans-serif;
+  color: gray;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 25px;
+  padding-left: 16px;
+  line-height: 70px;
+}
+
+.header-line {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #edf2f4;
+  margin-bottom: 45px;
+}
