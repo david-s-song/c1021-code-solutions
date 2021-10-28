@@ -6,3 +6,10 @@ function reverse(array) {
   }
   return reArray;
 }
+
+/*
+1. create a new container
+2. check through each item, starting from the last position of the item to the first position
+3. place the items from the last position into the new container
+4. put this container as output
+*/
