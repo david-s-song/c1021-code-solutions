@@ -32,7 +32,8 @@ body {
   border-bottom-color: #000;
 }
 
-.each-letter-current.each-letter-wrong {
+.each-letter-current,
+.each-letter-wrong {
   border-bottom-color: #f75353;
 }
 
