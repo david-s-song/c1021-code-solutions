@@ -6,22 +6,16 @@
 //   [false, {}, NaN, -0, 0, undefined, '',]
 // 4. use indexOf method(which returns the first element that matches and all occurences)
 
-// function compact(array) {
-//   var notOmitted = [];
-//   var omitItems = [false, {}, NaN, -0, 0, undefined, ''];
-//   for (var i = 0; i < array.length; i++) {
-//     if (array[i] !== omitItems) {
-//       notOmitted.push(array[i]);
-//     }
-//   } return notOmitted;
-// }
+// Create list (insert array declaration here) Ask user to enter an item ( prompt())
+// Check list for user entered item ( search list items (indexOf()) ....(more code if needed)
 
 function compact(array) {
   var notOmitted = [];
   for (var i = 0; i < array.length; i++) {
-    if ([false, {}, null, -0, 0, undefined, ''].indexOf(array[i]) === -1 && [NaN].indexOf(array[i]) === 1) {
+    if ([false, {}, null, NaN, -0, 0, undefined, ''].indexOf(array[i]) === -1) {
       notOmitted.push(array[i]);
     }
   }
   return notOmitted;
+
 }
