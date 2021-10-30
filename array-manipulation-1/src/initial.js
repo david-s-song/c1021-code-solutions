@@ -12,7 +12,7 @@ function initial(array) {
 /*
 1. create a new container
 2. Check each items in the container
-3. if the item in the second to last position, does not match the first item
-4. put this item(s) in the new container
+3. if the item in last position in the container does not match the first item
+4.  in the new container
 5. put this container into the output
 */

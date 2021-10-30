@@ -1,21 +1,21 @@
 /* exported compact */
-// brainstorm
-// 1. create a new container - in order to add the "specific" items
-// 2. use the for loop to check for each item in the array
-// 3. how do i identify specific items in the array ?
-//   [false, {}, NaN, -0, 0, undefined, '',]
-// 4. use indexOf method(which returns the first element that matches and all occurences)
-
-// Create list (insert array declaration here) Ask user to enter an item ( prompt())
-// Check list for user entered item ( search list items (indexOf()) ....(more code if needed)
-
 function compact(array) {
   var notOmitted = [];
   for (var i = 0; i < array.length; i++) {
-    if ([false, {}, null, NaN, -0, 0, undefined, ''].indexOf(array[i]) === -1) {
+    if ([false, {}, null, -0, 0, undefined, '', NaN].includes(array[i]) === false) {
       notOmitted.push(array[i]);
     }
   }
   return notOmitted;
-
 }
+
+/*
+1. Create a new storage container
+2. Place specific items to be omitted from given entity in a storage container
+3. Look through each of the items within the given entity
+3. If the items within the storage container matches the items in the given entity,
+  go to the next item.
+4. If the items in the entity do not match the items in the storage container, put those
+  unmatched items into the new storage container
+5. Put the new storage container as output.
+*/
