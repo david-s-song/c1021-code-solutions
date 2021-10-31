@@ -1,28 +1,26 @@
-var sentenceEl = document.querySelector('#sentence');
-var sentenceString = 'grumpy wizards make toxic brew';
-var index = 0;
+document.addEventListener('keydown', typing);
 
-for (var i = 0; i < sentenceString.length; i++) {
-  var span = document.createElement('span');
-  var text = document.createTextNode(sentenceString[i]);
-  span.appendChild(text);
-  span.classList.add('each-letter');
-  if (i === 0) span.classList.add('each-letter-current');
-  sentenceEl.appendChild(span);
+function typing(event) {
+  var $currentLetter = document.querySelector('.current-letter');
+  if (!$currentLetter.nextElementSibling) {
+    reset();
+    return;
+  }
+  if (event.key === $currentLetter.textContent) {
+    $currentLetter.className = 'letter-correct';
+    $currentLetter.nextElementSibling.className = 'current-letter';
+  } else {
+    $currentLetter.className = 'letter-wrong current-letter';
+  }
 }
 
-document.addEventListener('keydown', function (e) {
-  var currentEl = sentenceEl.querySelectorAll('.each-letter')[index];
-  var nextEl = sentenceEl.querySelectorAll('.each-letter')[index + 1];
-  if (!currentEl) return;
-
-  if (e.key === sentenceString[index]) {
-    currentEl.classList.remove('each-letter-wrong');
-    currentEl.classList.add('each-letter-right');
-    currentEl.classList.remove('each-letter-current');
-    index++;
-    if (nextEl) nextEl.classList.add('each-letter-current');
-  } else {
-    currentEl.classList.add('each-letter-wrong');
+function reset() {
+  var $allSpans = document.querySelectorAll('#sentence span');
+  for (var i = 0; i < $allSpans.length; i++) {
+    if (i === 0) {
+      $allSpans[i].className = 'current-letter';
+    } else {
+      $allSpans[i].className = '';
+    }
   }
-});
+}

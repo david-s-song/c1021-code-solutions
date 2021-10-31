@@ -19,6 +19,27 @@ body {
   align-items: center;
 }
 
+.letter {
+  color: black;
+}
+
+/* this is the first letter */
+
+.current-letter {
+  color: black;
+  border-bottom: 3px solid;
+}
+
+.letter-correct {
+  color: #25d325;
+}
+
+.letter-wrong {
+  color: #f75353;
+  border-bottom: 3px solid;
+}
+
+/*
 .sentence {
   letter-spacing: 3px;
 }
@@ -45,4 +66,4 @@ body {
 .each-letter-wrong {
   padding-bottom: 3px;
   color: #f75353;
-}
+} */
