@@ -8,22 +8,24 @@ body {
 
 .row {
   display: flex;
-  width: 1000px;
 }
 
 .column {
   width: 100%;
+  margin: auto;
   height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+span {
+  padding: 2px;
+}
+
 .letter {
   color: black;
 }
-
-/* this is the first letter */
 
 .current-letter {
   color: black;
@@ -38,32 +40,3 @@ body {
   color: #f75353;
   border-bottom: 3px solid;
 }
-
-/*
-.sentence {
-  letter-spacing: 3px;
-}
-
-.each-letter {
-  border-bottom: 3px solid transparent;
-  padding-bottom: 3px;
-}
-
-.each-letter-current {
-  border-bottom-color: #000;
-}
-
-.each-letter-current,
-.each-letter-wrong {
-  border-bottom-color: #f75353;
-}
-
-.each-letter-right {
-  padding-bottom: 3px;
-  color: #25d325;
-}
-
-.each-letter-wrong {
-  padding-bottom: 3px;
-  color: #f75353;
-} */
