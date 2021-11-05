@@ -1,39 +1,37 @@
-// /* exported Bank */
-// function Bank(nextAccountNumber, accounts) {
-//   this.nextAccountNumber = nextAccountNumber;
-//   this.accounts = accounts;
-// }
+/* exported Bank */
 
-// Bank.prototype.openAccount = function (holder, balance) {
-//   if (Number.isInteger(balance) === balance && balance > 0) {
-//     var account = new Account(this.nextAccountNumber, holder);
-//     account.push(balance);
-//     this.accounts.push(account);
-//     this.nextAccountNumber++;
-//     return this.nextAccountNumber;
-//   }
-// };
+function Bank() {
+  this.nextAccountNumber = Bank.nextAccountNumber;
+  this.accounts = Bank.accounts;
+}
 
-// Bank.prototype.getAccount = function (number) {
-// for (var i = 0; i < this.accounts.length; i++) {
-//   if (this.accounts[i] === this.)
-// }
-// };
+Bank.prototype.openAccount = function (holder, balance) {
+  if (Number.isInteger(balance) && balance > 0) {
+    var account = new Account(this.nextAccountNumber, holder);
+    account.push(balance);
+    this.accounts.push(account);
+    this.nextAccountNumber++;
+    return balance;
+  } else { return null; }
+};
+
+// A prototype method of the Bank constructor
+// that finds the account object stored in this.accounts
+
+// how do i find account object?
+
+Bank.prototype.getAccount = function (number) {
+  var accountNumbers = [];
+  for (var i = 0; i < this.accounts.length; i++) {
+    if (Number.isInteger(number) && number > 0) {
+      accountNumbers.push(number[i]);
+    }
+  } return accountNumbers;
+};
+
+// object store in this.accoun
+// whose account.number matches the value of number.
 
 // Bank.prototype.getTotalAssets = funciton () {
 
-// }
-
-// //question: where is the account number?
-// //
-// // Bank.prototype.getTotalAssets () {
-
-// // }
-
-// // Account.prototype.withdraw = function (amount) {
-// //   if (parseInt(amount) === amount && amount > 0) {
-// //     var transaction = new Transaction('withdrawal', amount);
-// //     this.transactions.push(transaction);
-// //     return true;
-// //   }
-// //   return false;
+// };
