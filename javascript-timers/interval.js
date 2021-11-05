@@ -1,49 +1,15 @@
 
-// var $heading = document.addEventListener('load', countdown);
-// var $numbers = 4;
+var $heading = document.querySelector('h1');
+var $numbers = 4;
 
-// function countdown(event) {
-//   $numbers--;
-//   if($numbers > 0) {
-//     $heading.textContent = $numbers;
-//   } else {
-//     $heading.textContent = '~Earth Beeeelooowww Us~'
-//     clearInterval()
-//   }
-//     $header.push(i++);
-//   }
-// }
+function countdown(event) {
+  $numbers--;
+  if ($numbers > 0) {
+    $heading.textContent = $numbers;
+  } else {
+    $heading.textContent = '~Earth Beeeelooowww Us~';
+    clearInterval();
+  }
+}
 
-// // setTimeout(changeHeader, 2.0 * 1000);
-
-// // $header.textContent = '4';
-// // $header.textContent = '3';
-// // $header.textContent = '2';
-// // $header.textContent = '1';
-// // $header.textContent = '~Earth Beeeelooowww Us~';
-
-// // var intervalID;
-
-// // function changeText () {
-// //   if (!intervalId) {
-// //     intervalID = setInterval(countdown)
-// //   }
-// // }
-
-// // = setInterval(function () {}
-
-// // document.querySelector('h1').addEventListener('load', countdown);
-
-// // function change(event) {
-// //   if ($header.TextContent === '4') {
-// //     $header = setInterval(countDown, 2000);
-// //   }
-// // }
-
-// // function countDown(event) {
-
-// // }
-
-// // function stopCount(event) {
-
-// // }
+setInterval(countdown, 2000);
