@@ -12,7 +12,9 @@ Bank.prototype.openAccount = function (holder, balance) {
     this.accounts.push(account);
     this.nextAccountNumber++;
     return balance;
-  } else { return null; }
+  } else {
+    return null;
+  }
 };
 
 // A prototype method of the Bank constructor
@@ -24,7 +26,8 @@ Bank.prototype.getAccount = function (number) {
   var accountNumbers = [];
   for (var i = 0; i < this.accounts.length; i++) {
     if (Number.isInteger(number) && number > 0) {
-      accountNumbers.push(number[i]);
+      this.accounts.length[this.account[i].number] = number;
+      accountNumbers.push(this.accounts[i]);
     }
   } return accountNumbers;
 };
