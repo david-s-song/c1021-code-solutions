@@ -7,7 +7,6 @@ function includes(array, value) {
   } return false;
 }
 
-includes([1, 2, 3, 4, 5], 2);
 
 /*
 

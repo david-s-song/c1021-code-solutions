@@ -3,7 +3,6 @@ function drop(array, count) {
   return array.slice(count, array.length);
 }
 
-drop(['foo', 'bar', 'baz', 'qux'], 2);
 
 /*
 

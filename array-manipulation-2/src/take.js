@@ -4,8 +4,6 @@ function take(array, count) {
 
 }
 
-take(['foo', 'bar', 'baz', 'qux'], 2);
-// -> ["foo", "bar"]
 
 /*
 

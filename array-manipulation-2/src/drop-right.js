@@ -1,11 +1,8 @@
 /* exported dropRight */
 function dropRight(array, count) {
-  return array.slice(0, count);
+  return array.slice(array, -count);
 
 }
-
-dropRight(['foo', 'bar', 'baz', 'qux'], 2);
-// -> ["foo", "bar"]
 
 /*
 

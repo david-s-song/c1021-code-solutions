@@ -1,10 +1,8 @@
 /* exported takeRight */
 function takeRight(array, count) {
-  return array.slice(count, array.length)
+  return array.slice(-count, array.length)
 }
 
-takeRight(['foo', 'bar', 'baz', 'qux'], 2);
-// -> ["baz", "qux"]
 
 /*
 
